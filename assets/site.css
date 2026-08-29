@@ -161,17 +161,17 @@ li{text-wrap:pretty}
 .mobile-nav-panel .btn{margin-top:20px}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;background:var(--green);color:var(--paper);overflow:hidden}
+.hero{position:relative;background:var(--green-deep) url(img/hero.jpg) center 28%/cover no-repeat;color:var(--paper);overflow:hidden}
 .hero::before{
   content:"";position:absolute;inset:0;
   background:
-    radial-gradient(circle at 78% 18%,rgba(198,166,103,.16),transparent 42%),
-    radial-gradient(circle at 12% 88%,rgba(36,90,72,.55),transparent 46%);
+    linear-gradient(102deg,rgba(9,30,23,.95) 0%,rgba(9,30,23,.88) 38%,rgba(9,30,23,.62) 66%,rgba(9,30,23,.42) 100%),
+    radial-gradient(circle at 80% 12%,rgba(198,166,103,.14),transparent 44%);
 }
 .hero::after{
-  content:"";position:absolute;top:-140px;right:-220px;width:760px;height:760px;
+  content:"";position:absolute;top:-160px;right:-240px;width:620px;height:620px;
   background:url(img/hero-globe.svg) center/contain no-repeat;
-  opacity:.5;pointer-events:none;
+  opacity:.22;pointer-events:none;
 }
 .hero-inner{position:relative;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center;padding:clamp(64px,10vw,120px) 0}
 .hero .eyebrow{color:var(--brass-light)}
@@ -284,7 +284,13 @@ li{text-wrap:pretty}
 .review-card .r-meta b{color:var(--green-deep)}
 
 /* big pull quote */
-.pull{font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,1rem + 1.6vw,1.9rem);line-height:1.7;color:var(--paper);max-width:26ch;margin:0 auto;text-align:center;letter-spacing:-0.01em}
+.pull{font-family:var(--serif);font-weight:500;font-size:clamp(1.35rem,1rem + 1.6vw,1.9rem);line-height:1.7;color:var(--paper);max-width:26ch;margin:0 auto;text-align:center;letter-spacing:-0.01em;position:relative}
+
+/* photo-backed band */
+.section--photo{position:relative;background:var(--green-deep) url(img/library.jpg) center/cover no-repeat;color:var(--paper);overflow:hidden}
+.section--photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,30,23,.82),rgba(9,30,23,.9))}
+.section--photo .wrap{position:relative}
+.section--photo h2,.section--photo h3{color:var(--paper)}
 .pull .pmark{font-family:var(--latin);color:var(--brass-light);font-size:2.4em;line-height:0;vertical-align:-.4em;margin-right:.1em}
 
 /* accordion (FAQ) */
@@ -371,9 +377,10 @@ table.compare tr:last-child td,table.compare tr:last-child th{border-bottom:none
 .reveal.in{opacity:1;transform:none}
 
 /* ---------- Page hero (inner pages) ---------- */
-.page-hero{background-color:var(--green);background-image:url(img/pattern-grid.svg);color:var(--paper);padding:clamp(60px,9vw,110px) 0 clamp(50px,7vw,90px);position:relative;overflow:hidden}
-.page-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 20%,rgba(198,166,103,.15),transparent 44%)}
-.page-hero::after{content:"";position:absolute;top:-180px;right:-200px;width:560px;height:560px;background:url(img/hero-globe.svg) center/contain no-repeat;opacity:.45;pointer-events:none}
+.page-hero{background:var(--green-deep) url(img/campus.jpg) center 32%/cover no-repeat;color:var(--paper);padding:clamp(64px,9vw,116px) 0 clamp(52px,7vw,92px);position:relative;overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(9,30,23,.94) 0%,rgba(9,30,23,.84) 44%,rgba(9,30,23,.6) 100%)}
+.page-hero::after{content:"";position:absolute;top:-180px;right:-200px;width:480px;height:480px;background:url(img/hero-globe.svg) center/contain no-repeat;opacity:.2;pointer-events:none}
+.page-hero--books{background-image:url(img/books.jpg);background-position:center 40%}
 .page-hero .wrap{position:relative}
 .page-hero h1{color:var(--paper);max-width:20ch}
 .page-hero p{color:#CBD6CC;max-width:46ch;margin-top:15px;font-size:1.05rem;line-height:1.72}
@@ -487,7 +494,9 @@ table.compare tr:last-child td,table.compare tr:last-child th{border-bottom:none
   .footer-bottom{flex-direction:column;gap:6px}
   .lead-form{padding:24px}
   .hero-actions .btn,.hero-actions{width:100%}
-  .hero::after,.page-hero::after{width:340px;height:340px;right:-120px;top:-90px;opacity:.35}
+  .hero::before{background:linear-gradient(178deg,rgba(9,30,23,.82) 0%,rgba(9,30,23,.9) 55%,rgba(9,30,23,.96) 100%)}
+  .page-hero::before{background:linear-gradient(178deg,rgba(9,30,23,.86),rgba(9,30,23,.94))}
+  .hero::after,.page-hero::after{width:300px;height:300px;right:-110px;top:-80px;opacity:.18}
   .center.section-head h2::after{width:140px}
   .teacher-grid{grid-template-columns:1fr}
   .float-cta{display:none}
