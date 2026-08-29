@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="32" cy="32" r="29.5" stroke-width="1.6"/>
+  <circle cx="32" cy="32" r="25" stroke-width="1"/>
+  <!-- sparkle -->
+  <path d="M32 9.5l1.6 3.4 3.4 1.6-3.4 1.6L32 20.6l-1.6-3.4L27 15.5l3.4-1.6z" fill="#000" stroke="none"/>
+  <!-- ascending strokes (improvement) -->
+  <path d="M21 34.5V31M28 34.5V26.5M35 34.5V22M42 34.5V18" stroke-width="2.2"/>
+  <!-- open book -->
+  <path d="M15 40c5-2.6 11-2.6 17 1 6-3.6 12-3.6 17-1v11c-5-2.6-11-2.6-17 1-6-3.6-12-3.6-17-1z" stroke-width="2"/>
+  <path d="M32 42v10" stroke-width="1.6"/>
+</svg>
