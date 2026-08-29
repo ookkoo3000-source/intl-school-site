@@ -430,41 +430,7 @@ table.compare tr:last-child td,table.compare tr:last-child th{border-bottom:none
 .teacher-body ul li b{color:var(--green-deep);font-weight:700}
 .teacher-body .tsubj{font-size:.8rem;color:var(--brass);font-weight:600;margin-top:8px;letter-spacing:.01em}
 
-/* ---------- School finder ---------- */
-.finder{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(24px,4vw,40px);box-shadow:var(--shadow-sm)}
-.finder .eyebrow{margin-bottom:12px}
-.finder h2{margin-bottom:10px}
-.finder .finder-desc{color:var(--muted);font-size:.98rem;max-width:56ch;line-height:1.7;margin-bottom:22px}
-.finder-tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
-.finder-tab{border:1px solid var(--line);background:var(--white);color:var(--green-deep);font-weight:600;font-family:inherit;
-  padding:9px 18px;border-radius:100px;cursor:pointer;font-size:.9rem;transition:all .2s}
-.finder-tab:hover{border-color:var(--brass-light)}
-.finder-tab.active{background:var(--green);color:var(--paper);border-color:var(--green)}
-.finder-search{position:relative}
-.finder-search input{width:100%;padding:15px 18px;border:1px solid var(--line);border-radius:var(--radius);
-  background:var(--white);font-family:inherit;font-size:1rem;color:var(--ink);transition:border-color .2s,box-shadow .2s}
-.finder-search input:focus{outline:none;border-color:var(--green-mid);box-shadow:0 0 0 3px var(--green-soft)}
-.finder-results{margin-top:8px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:none;max-height:340px;overflow-y:auto;background:var(--white)}
-.finder-results.show{display:block}
-.finder-results button{display:block;width:100%;text-align:left;background:none;border:none;border-bottom:1px solid var(--line);
-  padding:13px 16px;font-family:inherit;font-size:.92rem;color:var(--ink);cursor:pointer;line-height:1.5}
-.finder-results button:last-child{border-bottom:none}
-.finder-results button:hover{background:var(--green-soft)}
-.finder-results button b{color:var(--green-deep);font-weight:700}
-.finder-results .fr-none{padding:14px 16px;color:var(--muted);font-size:.9rem}
-.fr-tag{display:inline-block;background:var(--brass-ghost);color:#6b5324;font-size:.68rem;font-weight:700;
-  padding:1px 7px;border-radius:100px;vertical-align:middle;margin-left:4px}
-.finder-detail{margin-top:18px;border:1px solid var(--brass-light);border-radius:var(--radius);
-  background:var(--cream);padding:24px;display:none}
-.finder-detail.show{display:block}
-.finder-detail h3{font-size:1.2rem;margin-bottom:4px}
-.finder-detail .fd-meta{color:var(--brass);font-size:.85rem;font-weight:600;margin-bottom:16px}
-.finder-detail .fd-block{margin-top:14px}
-.finder-detail .fd-block b{display:block;color:var(--green-deep);font-family:var(--serif);font-weight:700;font-size:.98rem;margin-bottom:4px}
-.finder-detail .fd-block p{color:var(--muted);font-size:.92rem;line-height:1.75}
-.finder-detail .fd-cta{display:inline-flex;margin-top:20px;background:var(--brass);color:#241a08;font-weight:700;
-  padding:12px 24px;border-radius:var(--radius);font-size:.92rem;transition:background .2s}
-.finder-detail .fd-cta:hover{background:var(--brass-light)}
+/* School finder styles are inlined in schools.html <head> (cache-proof). */
 
 /* ---------- School list ---------- */
 .school-cat{margin-top:36px}
