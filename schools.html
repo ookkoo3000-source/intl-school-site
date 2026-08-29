@@ -47,6 +47,25 @@
 
 <section class="section">
   <div class="wrap">
+    <div class="finder" id="finder">
+      <span class="eyebrow">School Finder</span>
+      <h2>우리 아이 국제학교 찾기</h2>
+      <p class="finder-desc">학교를 검색·선택하면 학교 특징과 수학·영어 준비법, 입학 준비법(iTEP SLATE·SSAT 등 입학 영어시험 대비 포함)을 안내해 드립니다.</p>
+      <div class="finder-tabs">
+        <button type="button" class="finder-tab active" data-tab="kr">🇰🇷 한국 국제학교</button>
+        <button type="button" class="finder-tab" data-tab="intl">🌏 해외 국제학교 (주재원)</button>
+      </div>
+      <div class="finder-search">
+        <input type="text" id="finderInput" autocomplete="off" placeholder="지역·학교 검색  (예: 서울, 송도, 대전외국인학교)">
+      </div>
+      <div class="finder-results" id="finderResults"></div>
+      <div class="finder-detail" id="finderDetail"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
     <span class="eyebrow">Grades</span>
     <h2>학년별 전 과정 관리 (G1–G12)</h2>
     <p class="section-lead" style="margin-left:0;text-align:left">국제학교는 보통 G1(초등)부터 G12(고등)까지 운영됩니다. 전 학년의 내신·과제·시험을 1:1로 관리합니다.</p>
@@ -184,5 +203,6 @@
   <a href="tel:01031315305" class="fc-call" aria-label="전화 상담">전화</a>
 </div>
 <script src="assets/site.js"></script>
+<script src="assets/schools.js"></script>
 </body>
 </html>
