@@ -311,12 +311,39 @@ table.compare tbody th{background:var(--paper-2);font-family:var(--sans);font-we
 table.compare tr:last-child td,table.compare tr:last-child th{border-bottom:none}
 
 /* journal list */
-.journal-item{display:grid;grid-template-columns:110px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding .3s}
+.journal-item{display:grid;grid-template-columns:110px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline;transition:padding .3s;color:inherit}
 .journal-item:hover{padding-left:8px}
+a.journal-item:hover h3{color:var(--brass)}
 .journal-item .j-date{font-family:var(--sans);color:var(--brass);font-size:.85rem;letter-spacing:.02em;font-weight:500}
-.journal-item h3{font-size:1.14rem;margin-bottom:6px;line-height:1.5}
+.journal-item h3{font-size:1.14rem;margin-bottom:6px;line-height:1.5;transition:color .2s}
 .journal-item p{color:var(--muted);font-size:.94rem;line-height:1.7}
 .journal-item .j-cat{font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;color:var(--green-mid);font-family:var(--sans);font-weight:600;display:block;margin-bottom:7px}
+
+/* ---------- Article (journal post) ---------- */
+.post{max-width:680px;margin:0 auto}
+.post-head{margin-bottom:36px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.post-head .j-cat{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--green-mid);font-family:var(--sans);font-weight:600;display:block;margin-bottom:14px}
+.post-head h1{font-size:clamp(1.7rem,1.2rem + 1.8vw,2.4rem);line-height:1.32;margin-bottom:16px}
+.post-head .post-meta{font-family:var(--sans);color:var(--muted);font-size:.86rem;letter-spacing:.01em}
+.post-body>p{margin:0 0 20px;font-size:1.06rem;line-height:1.85;color:var(--ink)}
+.post-body>p:first-of-type{font-size:1.14rem;color:var(--green-deep)}
+.post-body h2{font-size:1.35rem;margin:40px 0 14px;line-height:1.4}
+.post-body h3{font-size:1.12rem;margin:28px 0 10px}
+.post-body ul,.post-body ol{margin:0 0 20px;padding-left:22px}
+.post-body li{margin-bottom:9px;line-height:1.8;color:var(--ink)}
+.post-body blockquote{margin:26px 0;padding:4px 0 4px 22px;border-left:3px solid var(--brass);
+  font-family:var(--serif);font-size:1.12rem;line-height:1.7;color:var(--green-deep)}
+.post-body strong{color:var(--green-deep)}
+.post-cta{margin-top:44px;padding:28px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);text-align:center}
+.post-cta p{color:var(--muted);font-size:.96rem;margin-bottom:16px}
+.post-back{display:inline-flex;margin-top:36px;color:var(--brass);font-weight:600;font-size:.9rem}
+.post-back:hover{color:var(--green-deep)}
+@media (max-width:760px){
+  .post-body>p{font-size:1.02rem;line-height:1.8}
+  .post-body>p:first-of-type{font-size:1.08rem}
+  .post-body h2{font-size:1.25rem;margin-top:32px}
+  .post-cta{padding:22px}
+}
 
 /* ---------- Lead form ---------- */
 .lead{background-color:var(--green);background-image:url(img/pattern-grid.svg);color:var(--paper);position:relative;overflow:hidden}
