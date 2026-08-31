@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://intl.primeadmit.co.kr/sitemap.xml
