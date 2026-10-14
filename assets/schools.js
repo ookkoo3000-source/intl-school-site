@@ -17,7 +17,7 @@ var KR_SCHOOLS=[
 {n:"청라달튼외국인학교 (Cheongna Dalton School)",r:"인천 청라",c:"미국식·AP"},
 {n:"경기수원외국인학교 (Gyeonggi Suwon International School, GSIS)",r:"경기 수원",c:"미국식·IB"},
 {n:"대전외국인학교 (Taejon Christian International School, TCIS)",r:"대전",c:"미국식·AP·IB"},
-{n:"NLCS 제주 (North London Collegiate School Jeju)",r:"제주 영어교육도시",c:"영국계·IGCSE·A-Level·IB"},
+{n:"NLCS 제주 (North London Collegiate School Jeju)",r:"제주 영어교육도시",c:"영국계·IGCSE(Y10-11)·IB DP(Y12-13)",g:"journal-nlcs-jeju-alevel-math.html"},
 {n:"브랭섬홀아시아 (Branksome Hall Asia, BHA)",r:"제주 영어교육도시",c:"IB"},
 {n:"한국국제학교 제주 (Korea International School Jeju, KIS Jeju)",r:"제주 영어교육도시",c:"미국식·AP"},
 {n:"세인트존스베리아카데미 제주 (St. Johnsbury Academy Jeju, SJA)",r:"제주 영어교육도시",c:"미국식"},
@@ -420,6 +420,7 @@ function showDetail(i) {
     '<div class="fd-block"><b>수학 준비</b><p>Algebra·Geometry 기초가 탄탄해야 ' + cm + ' 수학(Pre-Calculus·Calculus 등)으로 자연스럽게 이어집니다. 영어 용어와 서술형 답안을 함께 잡는 것이 핵심입니다.</p></div>' +
     '<div class="fd-block"><b>영어 준비</b><p>원서 리딩, 에세이 라이팅·첨삭, 학술 토론을 체계적으로 관리하면 내신과 시험에서 차이가 큽니다. 회화는 되는데 성적이 안 나오는 경우 적응 단계부터 1:1로 돕습니다.</p></div>' +
     '<div class="fd-block"><b>입학 준비</b><p>입학은 영어 시험 + 수학 배치고사 + 인터뷰 + 에세이가 핵심입니다. 학교별 전형에 맞춰 에세이 첨삭과 영어 인터뷰를 1:1로 준비하면 합격 가능성이 올라갑니다. (iTEP SLATE·SSAT 등 공인 영어시험 대비 포함)</p></div>' +
+    (s.g ? '<div class="fd-block"><a href="' + s.g + '">' + s.n.split(' (')[0] + ' 학제·과목 가이드 자세히 보기 →</a></div>' : '') +
     '<a class="fd-cta" href="index.html#lead">' + s.n.split(' (')[0] + ' 무료 상담 신청 →</a>';
   $detail.className = 'finder-detail show';
   $detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
