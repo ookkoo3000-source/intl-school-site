@@ -3,7 +3,7 @@
 "use strict";
 
 var KR_SCHOOLS=[
-{n:"서울외국인학교 (Seoul Foreign School, SFS)",r:"서울 서대문구",c:"미국식·AP"},
+{n:"서울외국인학교 (Seoul Foreign School, SFS)",r:"서울 서대문구",c:"IB Continuum·영국식(2트랙)",g:"journal-sfs-two-tracks.html"},
 {n:"서울국제학교 (Seoul International School, SIS)",r:"경기 성남 수정구 (분당 인근)",c:"미국식·AP",g:"journal-sis-ap-course-selection.html"},
 {n:"한국외국인학교 서울캠퍼스 (Korea International School Seoul, KIS Seoul)",r:"서울 강남 개포",c:"미국식·초등전용",g:"journal-kis-seoul-elementary-admission.html"},
 {n:"한국외국인학교 판교캠퍼스 (Korea International School Pangyo, KIS Pangyo)",r:"경기 성남 분당구 판교",c:"미국식·AP"},
@@ -18,12 +18,12 @@ var KR_SCHOOLS=[
 {n:"경기수원외국인학교 (Gyeonggi Suwon International School, GSIS)",r:"경기 수원",c:"미국식·IB"},
 {n:"대전외국인학교 (Taejon Christian International School, TCIS)",r:"대전",c:"IB(PYP·MYP·DP)",g:"journal-tcis-math-myp-dp.html"},
 {n:"NLCS 제주 (North London Collegiate School Jeju)",r:"제주 영어교육도시",c:"영국계·IGCSE(Y10-11)·IB DP(Y12-13)",g:"journal-nlcs-jeju-alevel-math.html"},
-{n:"브랭섬홀아시아 (Branksome Hall Asia, BHA)",r:"제주 영어교육도시",c:"IB"},
+{n:"브랭섬홀아시아 (Branksome Hall Asia, BHA)",r:"제주 영어교육도시",c:"IB",g:"journal-bha-ib-math-aa-ai.html"},
 {n:"한국국제학교 제주 (Korea International School Jeju, KIS Jeju)",r:"제주 영어교육도시",c:"미국식·AP"},
 {n:"세인트존스베리아카데미 제주 (St. Johnsbury Academy Jeju, SJA)",r:"제주 영어교육도시",c:"미국식"},
-{n:"부산외국인학교 (Busan Foreign School, BFS)",r:"부산 해운대",c:"미국식·AP"},
+{n:"부산외국인학교 (Busan Foreign School, BFS)",r:"부산 해운대",c:"미국식·AP",g:"journal-bfs-admission-priority.html"},
 {n:"부산국제외국인학교 (Busan International Foreign School, BIFS)",r:"부산 기장",c:"IB"},
-{n:"대구국제학교 (Daegu International School, DIS)",r:"대구",c:"미국식·AP"},
+{n:"대구국제학교 (Daegu International School, DIS)",r:"대구",c:"미국식·AP",g:"journal-dis-daegu-admission.html"},
 {n:"광주외국인학교 (Gwangju International School, GIS)",r:"광주",c:"미국식",g:"journal-gis-admission-rd-zone.html"},
 {n:"전주화산외국인학교 (Jeonju Hwasan Foreign School)",r:"전북 전주",c:"미국식"},
 {n:"거제국제외국인학교 (Geoje International Foreign School, GIFS)",r:"경남 거제",c:"미국식"},
