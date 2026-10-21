@@ -399,6 +399,18 @@ a.journal-item:hover h3{color:var(--brass)}
 .float-cta .fc-kakao{background:#FAE100;color:#3C1E1E}
 .float-cta .fc-call{background:var(--green);color:var(--paper)}
 
+/* ---------- Consult chat button ---------- */
+.consult-btn{position:fixed;right:20px;bottom:152px;z-index:91;display:flex;align-items:center;gap:8px;
+  background:var(--green-deep);color:var(--cream);border:1px solid var(--brass);border-radius:999px;
+  padding:12px 20px;font-family:var(--sans);font-size:.85rem;font-weight:700;letter-spacing:.01em;
+  box-shadow:var(--shadow-lg);cursor:pointer;transition:transform .2s var(--ease),background .2s var(--ease);
+  white-space:nowrap}
+.consult-btn:hover{background:var(--green-mid);transform:translateY(-2px)}
+.consult-btn svg{width:17px;height:17px;flex-shrink:0}
+@media (max-width:760px){
+  .consult-btn{right:14px;bottom:70px;padding:10px 16px;font-size:.8rem}
+}
+
 /* ---------- Reveal animation ---------- */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .reveal.in{opacity:1;transform:none}

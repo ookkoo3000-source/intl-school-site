@@ -109,5 +109,21 @@
   if (document.readyState === 'complete') { l(); }
   else { w.addEventListener('DOMContentLoaded', l); w.addEventListener('load', l); }
 
-  ChannelIO('boot', { pluginKey: '5546e3e5-970c-45c6-bd6e-94493260a4d3' });
+  ChannelIO('boot', {
+    pluginKey: '5546e3e5-970c-45c6-bd6e-94493260a4d3',
+    hideChannelButtonOnBoot: true
+  });
+
+  function addConsultBtn() {
+    if (document.getElementById('consultBtn')) { return; }
+    var btn = document.createElement('button');
+    btn.id = 'consultBtn';
+    btn.type = 'button';
+    btn.className = 'consult-btn';
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span>실시간 상담하기</span>';
+    btn.addEventListener('click', function () { ChannelIO('showMessenger'); });
+    document.body.appendChild(btn);
+  }
+  if (document.readyState === 'complete' || document.readyState === 'interactive') { addConsultBtn(); }
+  else { document.addEventListener('DOMContentLoaded', addConsultBtn); }
 })();
