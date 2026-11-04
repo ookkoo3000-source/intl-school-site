@@ -211,6 +211,16 @@ var INTL_SCHOOLS=[
 {n:"브리티시 스쿨 리야드 (British International School Riyadh)",r:"사우디 리야드",c:"영국계·A-Level"},
 {n:"OWIS 리야드 (One World International School)",r:"사우디 리야드",c:"IB",g:"journal-owis-riyadh-admission.html"},
 {n:"카이로 아메리칸 칼리지 (Cairo American College)",r:"이집트 카이로",c:"미국식·AP",g:"journal-cairo-american-college-admission.html"},
+{n:"도하 칼리지 (Doha College)",r:"카타르 도하",c:"영국계·A-Level",g:"journal-doha-college-admission.html"},
+{n:"ACS 암만 (American Community School Amman)",r:"요르단 암만",c:"미국식·AP",g:"journal-acs-amman-admission.html"},
+{n:"ISY 양곤 (International School Yangon)",r:"미얀마 양곤",c:"미국식·AP",g:"journal-isy-yangon-admission.html"},
+{n:"비엔티안 국제학교 (Vientiane International School, VIS)",r:"라오스 비엔티안",c:"IB",g:"journal-vis-vientiane-admission.html"},
+{n:"AIS 쿠웨이트 (American International School of Kuwait)",r:"쿠웨이트",c:"미국식·AP",g:"journal-ais-kuwait-admission.html"},
+{n:"ISPP 프놈펜 (International School of Phnom Penh)",r:"캄보디아 프놈펜",c:"IB",g:"journal-ispp-phnompenh-admission.html"},
+{n:"영국국제학교 프놈펜 (BISPP)",r:"캄보디아 프놈펜",c:"영국계·A-Level",g:"journal-bispp-phnompenh-admission.html"},
+{n:"세인트크리스토퍼 스쿨 (St Christopher's School Bahrain)",r:"바레인",c:"영국계·IB·A-Level",g:"journal-stchris-bahrain-admission.html"},
+{n:"JKS 제다 (Jeddah Knowledge International School)",r:"사우디 제다",c:"미국식·AP",g:"journal-jks-jeddah-admission.html"},
+{n:"AISJ 제다 (American International School of Jeddah)",r:"사우디 제다",c:"미국식·AP",g:"journal-aisj-jeddah-admission.html"},
 {n:"이튼 칼리지 (Eton College)",r:"영국 (보딩)",c:"영국계·A-Level"},
 {n:"해로우 스쿨 (Harrow School)",r:"영국 런던 (보딩)",c:"영국계·A-Level"},
 {n:"윈체스터 칼리지 (Winchester College)",r:"영국 (보딩)",c:"영국계·A-Level"},
@@ -361,7 +371,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|인도|뭄바이/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
