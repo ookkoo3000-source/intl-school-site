@@ -178,7 +178,7 @@ var INTL_SCHOOLS=[
 {n:"셰루즈베리 인터내셔널 방콕 (Shrewsbury International School Bangkok)",r:"태국 방콕",c:"영국계·A-Level",g:"journal-shrewsbury-bangkok-admission.html"},
 {n:"리젠츠 인터내셔널 방콕 (Regent's International School Bangkok)",r:"태국 방콕",c:"IB",g:"journal-regents-bangkok-admission.html"},
 {n:"KIS 인터내셔널 방콕 (KIS International School)",r:"태국 방콕",c:"IB",g:"journal-kis-international-bangkok-admission.html"},
-{n:"웰링턴 칼리지 방콕 (Wellington College Int'l Bangkok)",r:"태국 방콕",c:"영국계·A-Level"},
+{n:"웰링턴 칼리지 방콕 (Wellington College Int'l Bangkok)",r:"태국 방콕",c:"영국계·A-Level",g:"journal-wellington-bangkok-admission.html"},
 {n:"브롬스그로브 인터내셔널 (Bromsgrove International School Thailand)",r:"태국 방콕",c:"영국계"},
 {n:"루암루디 인터내셔널 (Ruamrudee International School, RIS)",r:"태국 방콕",c:"미국식·IB",g:"journal-ris-bangkok-admission.html"},
 {n:"콘코디안 인터내셔널 (Concordian International School)",r:"태국 방콕",c:"IB"},
@@ -188,7 +188,7 @@ var INTL_SCHOOLS=[
 {n:"UWC 타일랜드 (UWC Thailand)",r:"태국 푸켓",c:"IB"},
 {n:"브리티시 인터내셔널 푸켓 (BISP)",r:"태국 푸켓",c:"영국계·IB"},
 {n:"ISKL (International School of Kuala Lumpur)",r:"말레이시아 쿠알라룸푸르",c:"미국식·IB",g:"journal-iskl-kualalumpur-admission.html"},
-{n:"가든 인터내셔널 스쿨 (Garden International School)",r:"말레이시아 쿠알라룸푸르",c:"영국계·IGCSE·A-Level"},
+{n:"가든 인터내셔널 스쿨 (Garden International School)",r:"말레이시아 쿠알라룸푸르",c:"영국계·IGCSE·A-Level",g:"journal-garden-kl-admission.html"},
 {n:"알리스 스미스 스쿨 (Alice Smith School)",r:"말레이시아 쿠알라룸푸르",c:"영국계",g:"journal-alice-smith-kl-admission.html"},
 {n:"말보로 칼리지 말레이시아 (Marlborough College Malaysia)",r:"말레이시아 조호바루",c:"영국계·A-Level·IB"},
 {n:"자카르타 인터컬처럴 (Jakarta Intercultural School, JIS)",r:"인도네시아 자카르타",c:"미국식·IB",g:"journal-jis-jakarta-admission.html"},
@@ -329,15 +329,16 @@ var INTL_SCHOOLS=[
 {n:"독일-스위스 국제학교 (German Swiss International School)",r:"홍콩",c:"영국계·독일",g:"journal-germanswiss-hongkong-admission.html"},
 {n:"프랑스 국제학교 홍콩 (French International School)",r:"홍콩",c:"IB·프랑스",g:"journal-fis-hongkong-admission.html"},
 {n:"켈렛 스쿨 (Kellett School)",r:"홍콩",c:"영국계·A-Level",g:"journal-kellett-hongkong-admission.html"},
-{n:"호주 국제학교 홍콩 (Australian International School Hong Kong)",r:"홍콩",c:"호주·IB"},
+{n:"호주 국제학교 홍콩 (Australian International School Hong Kong)",r:"홍콩",c:"호주·IB",g:"journal-aishk-admission.html"},
+{n:"슈르즈버리 홍콩 (Shrewsbury International School Hong Kong)",r:"홍콩",c:"영국계·IGCSE·A-Level",g:"journal-shrewsbury-hongkong-admission.html"},
 {n:"디스커버리 칼리지 (Discovery College)",r:"홍콩",c:"IB"},
 {n:"싱가포르 국제학교 홍콩 (Singapore International School)",r:"홍콩",c:"싱가포르·IGCSE"},
-{n:"빅토리아 상하이 아카데미 (Victoria Shanghai Academy)",r:"홍콩",c:"IB"},
+{n:"빅토리아 상하이 아카데미 (Victoria Shanghai Academy)",r:"홍콩",c:"IB",g:"journal-vsa-hongkong-admission.html"},
 {n:"몬키아라 국제학교 (Mont'Kiara International School)",r:"말레이시아 쿠알라룸푸르",c:"미국식·IB"},
 {n:"넥서스 인터내셔널 말레이시아 (Nexus International School)",r:"말레이시아 푸트라자야",c:"IB·IGCSE"},
 {n:"스리 KDU 국제학교 (Sri KDU International School)",r:"말레이시아 쿠알라룸푸르",c:"영국계·IGCSE"},
 {n:"엡솜 칼리지 말레이시아 (Epsom College in Malaysia)",r:"말레이시아",c:"영국계·A-Level"},
-{n:"IGB 국제학교 (IGB International School)",r:"말레이시아 쿠알라룸푸르",c:"IB"},
+{n:"IGB 국제학교 (IGB International School)",r:"말레이시아 쿠알라룸푸르",c:"IB",g:"journal-igbis-kl-admission.html"},
 {n:"텐비 스쿨 (Tenby Schools)",r:"말레이시아",c:"영국계·IGCSE"},
 {n:"키스톤 아카데미 (Keystone Academy)",r:"중국 베이징",c:"IB·미국식",g:"journal-keystone-beijing-admission.html"},
 {n:"YK 파오 스쿨 (YK Pao School)",r:"중국 상하이",c:"IB·IGCSE",g:"journal-ykpao-shanghai-admission.html"},
@@ -353,7 +354,10 @@ var INTL_SCHOOLS=[
 {n:"렙튼 스쿨 두바이 (Repton School Dubai)",r:"UAE 두바이",c:"영국계·IB·A-Level",g:"journal-repton-dubai-admission.html"},
 {n:"두바이 아메리칸 아카데미 (Dubai American Academy)",r:"UAE 두바이",c:"미국식·IB",g:"journal-dubai-american-academy-admission.html"},
 {n:"킹스 스쿨 두바이 (Kings' School Dubai)",r:"UAE 두바이",c:"영국계"},
-{n:"제스 두바이 (Jumeirah English Speaking School, JESS)",r:"UAE 두바이",c:"영국계·IB"},
+{n:"제스 두바이 (Jumeirah English Speaking School, JESS)",r:"UAE 두바이",c:"영국계·IB",g:"journal-jess-dubai-admission.html"},
+{n:"도하 아카데미 (Doha Academy)",r:"카타르 도하",c:"영국계·A-Level",g:"journal-doha-academy-admission.html"},
+{n:"IFS 싱가포르 (International French School)",r:"싱가포르",c:"프랑스·IB",g:"journal-ifs-singapore-admission.html"},
+{n:"모리슨 아카데미 타이중 (Morrison Academy)",r:"대만 타이중",c:"미국식·AP",g:"journal-morrison-taichung-admission.html"},
 {n:"노드 앵글리아 두바이 (Nord Anglia International School Dubai)",r:"UAE 두바이",c:"영국계·IB",g:"journal-nas-dubai-admission.html"},
 {n:"그린 스쿨 발리 (Green School Bali)",r:"인도네시아 발리",c:"케임브리지(CIE)"},
 {n:"발리 아일랜드 스쿨 (Bali Island School)",r:"인도네시아 발리",c:"IB"},
@@ -371,7 +375,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
