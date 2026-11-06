@@ -133,6 +133,7 @@ var INTL_SCHOOLS=[
 {n:"상하이 아메리칸 스쿨 (Shanghai American School, SAS)",r:"중국 상하이",c:"미국식·AP",g:"journal-sas-shanghai-admission.html"},
 {n:"콩코디아 상하이 (Concordia International School Shanghai)",r:"중국 상하이",c:"미국식·AP",g:"journal-concordia-shanghai-admission.html"},
 {n:"덜위치 칼리지 상하이 (Dulwich College Shanghai)",r:"중국 상하이",c:"영국계·IB",g:"journal-dulwich-shanghai-puxi-admission.html"},
+{n:"WISS 상하이 (Western International School of Shanghai)",r:"중국 상하이",c:"IB",g:"journal-wiss-shanghai-admission.html"},
 {n:"SCIS 상하이 (Shanghai Community Int'l School)",r:"중국 상하이",c:"IB",g:"journal-scis-shanghai-admission.html"},
 {n:"YCIS 상하이 (Yew Chung Int'l School Shanghai)",r:"중국 상하이",c:"IB"},
 {n:"국제학교 베이징 (International School of Beijing, ISB)",r:"중국 베이징",c:"미국식·IB",g:"journal-isb-beijing-admission.html"},
@@ -197,6 +198,7 @@ var INTL_SCHOOLS=[
 {n:"브렌트 인터내셔널 (Brent International School Manila)",r:"필리핀 마닐라",c:"미국식·IB",g:"journal-brent-manila-admission.html"},
 {n:"브리티시 스쿨 마닐라 (British School Manila)",r:"필리핀 마닐라",c:"영국계·IB",g:"journal-british-school-manila-admission.html"},
 {n:"리딤 인터내셔널 (Reedley International School)",r:"필리핀 마닐라",c:"미국식",g:"journal-reedley-manila-admission.html"},
+{n:"NAIS 마닐라 (Nord Anglia International School Manila)",r:"필리핀 마닐라",c:"영국계",g:"journal-nais-manila-admission.html"},
 {n:"페이스 아카데미 (Faith Academy)",r:"필리핀 마닐라",c:"미국식·AP"},
 {n:"세인트 폴 인터내셔널 (St. Paul American School Manila)",r:"필리핀 마닐라",c:"미국식·AP"},
 {n:"세부 인터내셔널 스쿨 (Cebu International School)",r:"필리핀 세부",c:"미국식·IB"},
@@ -341,18 +343,26 @@ var INTL_SCHOOLS=[
 {n:"IGB 국제학교 (IGB International School)",r:"말레이시아 쿠알라룸푸르",c:"IB",g:"journal-igbis-kl-admission.html"},
 {n:"텐비 스쿨 (Tenby Schools)",r:"말레이시아",c:"영국계·IGCSE"},
 {n:"키스톤 아카데미 (Keystone Academy)",r:"중국 베이징",c:"IB·미국식",g:"journal-keystone-beijing-admission.html"},
+{n:"BSB 순이 (The British School of Beijing, Shunyi)",r:"중국 베이징",c:"영국계",g:"journal-bsb-beijing-admission.html"},
 {n:"YK 파오 스쿨 (YK Pao School)",r:"중국 상하이",c:"IB·IGCSE",g:"journal-ykpao-shanghai-admission.html"},
 {n:"노드 앵글리아 상하이 (Nord Anglia International School Shanghai)",r:"중국 상하이",c:"영국계·IB",g:"journal-nais-pudong-admission.html"},
 {n:"상하이 SUIS (Shanghai United International School)",r:"중국 상하이",c:"IB·IGCSE"},
 {n:"K. 인터내셔널 스쿨 도쿄 (K. International School Tokyo)",r:"일본 도쿄",c:"IB"},
 {n:"컬럼비아 인터내셔널 스쿨 (Columbia International School)",r:"일본 사이타마",c:"캐나다(온타리오)"},
 {n:"디루바이 암바니 국제학교 (Dhirubhai Ambani International School)",r:"인도 뭄바이",c:"IB·IGCSE"},
+{n:"오베로이 인터내셔널 스쿨 (Oberoi International School)",r:"인도 뭄바이",c:"IB",g:"journal-oberoi-mumbai-admission.html"},
 {n:"뭄바이 아메리칸 스쿨 (American School of Bombay)",r:"인도 뭄바이",c:"IB",g:"journal-asb-mumbai-admission.html"},
 {n:"코다이카날 국제학교 (Kodaikanal International School)",r:"인도 코다이카날",c:"미국식·IB"},
 {n:"마힌드라 UWC (Mahindra United World College)",r:"인도 푸네",c:"IB",g:"journal-mahindra-uwc-admission.html"},
 {n:"주메이라 칼리지 (Jumeirah College)",r:"UAE 두바이",c:"영국계·A-Level"},
 {n:"렙튼 스쿨 두바이 (Repton School Dubai)",r:"UAE 두바이",c:"영국계·IB·A-Level",g:"journal-repton-dubai-admission.html"},
 {n:"두바이 아메리칸 아카데미 (Dubai American Academy)",r:"UAE 두바이",c:"미국식·IB",g:"journal-dubai-american-academy-admission.html"},
+{n:"DESS 칼리지 (Dubai English Speaking College)",r:"UAE 두바이",c:"영국계·A-Level",g:"journal-dess-dubai-admission.html"},
+{n:"QSI 국제학교 선전 (QSI International School of Shenzhen)",r:"중국 선전",c:"미국식",g:"journal-qsi-shenzhen-admission.html"},
+{n:"AISC 첸나이 (American International School Chennai)",r:"인도 첸나이",c:"미국식",g:"journal-aisc-chennai-admission.html"},
+{n:"난징 국제학교 (Nanjing International School)",r:"중국 난징",c:"IB",g:"journal-nis-nanjing-admission.html"},
+{n:"덜위치 칼리지 쑤저우 (Dulwich College Suzhou)",r:"중국 쑤저우",c:"영국계·IB",g:"journal-dulwich-suzhou-admission.html"},
+{n:"BSG 광저우 (The British School of Guangzhou)",r:"중국 광저우",c:"영국계",g:"journal-bsg-guangzhou-admission.html"},
 {n:"킹스 스쿨 두바이 (Kings' School Dubai)",r:"UAE 두바이",c:"영국계"},
 {n:"제스 두바이 (Jumeirah English Speaking School, JESS)",r:"UAE 두바이",c:"영국계·IB",g:"journal-jess-dubai-admission.html"},
 {n:"도하 아카데미 (Doha Academy)",r:"카타르 도하",c:"영국계·A-Level",g:"journal-doha-academy-admission.html"},
@@ -375,7 +385,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
