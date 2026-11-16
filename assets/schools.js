@@ -230,6 +230,16 @@ var INTL_SCHOOLS=[
 {n:"AISL 라고스 (American International School of Lagos)",r:"나이지리아 라고스",c:"미국식·AP",g:"journal-aisl-lagos-admission.html"},
 {n:"링컨 커뮤니티 스쿨 (Lincoln Community School)",r:"가나 아크라",c:"미국식·AP",g:"journal-lincoln-accra-admission.html"},
 {n:"니도 데 아길라스 (The International School Nido de Aguilas)",r:"칠레 산티아고",c:"미국식·IB",g:"journal-nido-santiago-admission.html"},
+{n:"QSI 아스타나 (QSI International School of Astana)",r:"카자흐스탄 아스타나",c:"미국식·QSI",g:"journal-qsi-astana-admission.html"},
+{n:"QSI 비슈케크 (QSI International School of Bishkek)",r:"키르기스스탄 비슈케크",c:"미국식·QSI",g:"journal-qsi-bishkek-admission.html"},
+{n:"타슈켄트 국제학교 (Tashkent International School, TIS)",r:"우즈베키스탄 타슈켄트",c:"미국식",g:"journal-tis-tashkent-admission.html"},
+{n:"티라나 국제학교 (Tirana International School, QSI)",r:"알바니아 티라나",c:"미국식·QSI",g:"journal-tis-tirana-admission.html"},
+{n:"QSI 스코페 (QSI International School of Skopje)",r:"북마케도니아 스코페",c:"미국식·QSI",g:"journal-qsi-skopje-admission.html"},
+{n:"QSI 브라티슬라바 (QSI International School of Bratislava)",r:"슬로바키아 브라티슬라바",c:"미국식·QSI",g:"journal-qsi-bratislava-admission.html"},
+{n:"QSI 예레반 (QSI Yerevan International School)",r:"아르메니아 예레반",c:"미국식·QSI",g:"journal-qsi-yerevan-admission.html"},
+{n:"QSI 하이퐁 (QSI International School of Hai Phong)",r:"베트남 하이퐁",c:"미국식·QSI",g:"journal-qsi-haiphong-admission.html"},
+{n:"QSI 딜리 (QSI International School of Dili)",r:"동티모르 딜리",c:"미국식·QSI",g:"journal-qsi-dili-admission.html"},
+{n:"빈트후크 국제학교 (Windhoek International School, WIS)",r:"나미비아 빈트후크",c:"미국식",g:"journal-wis-windhoek-admission.html"},
 {n:"세인트크리스토퍼 스쿨 (St Christopher's School Bahrain)",r:"바레인",c:"영국계·IB·A-Level",g:"journal-stchris-bahrain-admission.html"},
 {n:"JKS 제다 (Jeddah Knowledge International School)",r:"사우디 제다",c:"미국식·AP",g:"journal-jks-jeddah-admission.html"},
 {n:"AISJ 제다 (American International School of Jeddah)",r:"사우디 제다",c:"미국식·AP",g:"journal-aisj-jeddah-admission.html"},
@@ -395,7 +405,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우|튀르키예|이스탄불|아제르바이잔|바쿠|방글라데시|다카|몽골|울란바토르|케냐|나이로비|우간다|캄팔라|탄자니아|다르에스살람|나이지리아|라고스|가나|아크라|칠레|산티아고/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우|튀르키예|이스탄불|아제르바이잔|바쿠|방글라데시|다카|몽골|울란바토르|케냐|나이로비|우간다|캄팔라|탄자니아|다르에스살람|나이지리아|라고스|가나|아크라|칠레|산티아고|카자흐스탄|아스타나|키르기스스탄|비슈케크|우즈베키스탄|타슈켄트|알바니아|티라나|북마케도니아|스코페|슬로바키아|브라티슬라바|아르메니아|예레반|베트남|하이퐁|동티모르|딜리|나미비아|빈트후크/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
