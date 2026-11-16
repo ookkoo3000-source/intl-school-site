@@ -220,6 +220,16 @@ var INTL_SCHOOLS=[
 {n:"AIS 쿠웨이트 (American International School of Kuwait)",r:"쿠웨이트",c:"미국식·AP",g:"journal-ais-kuwait-admission.html"},
 {n:"ISPP 프놈펜 (International School of Phnom Penh)",r:"캄보디아 프놈펜",c:"IB",g:"journal-ispp-phnompenh-admission.html"},
 {n:"영국국제학교 프놈펜 (BISPP)",r:"캄보디아 프놈펜",c:"영국계·A-Level",g:"journal-bispp-phnompenh-admission.html"},
+{n:"IICS 이스탄불 (International Community School of Istanbul)",r:"튀르키예 이스탄불",c:"미국식·IB",g:"journal-iics-istanbul-admission.html"},
+{n:"바쿠 국제학교 (Baku International School, QSI)",r:"아제르바이잔 바쿠",c:"미국식·QSI",g:"journal-bis-baku-admission.html"},
+{n:"AISD 다카 (American International School Dhaka)",r:"방글라데시 다카",c:"미국식·AP",g:"journal-aisd-dhaka-admission.html"},
+{n:"ISU 울란바토르 (International School of Ulaanbaatar)",r:"몽골 울란바토르",c:"IB",g:"journal-isu-ulaanbaatar-admission.html"},
+{n:"ISK 나이로비 (International School of Kenya)",r:"케냐 나이로비",c:"미국식·AP·IB",g:"journal-isk-nairobi-admission.html"},
+{n:"우간다국제학교 (International School of Uganda, ISU)",r:"우간다 캄팔라",c:"미국식·IB",g:"journal-isu-kampala-admission.html"},
+{n:"IST 다르에스살람 (International School of Tanganyika)",r:"탄자니아 다르에스살람",c:"미국식·IB",g:"journal-ist-daressalaam-admission.html"},
+{n:"AISL 라고스 (American International School of Lagos)",r:"나이지리아 라고스",c:"미국식·AP",g:"journal-aisl-lagos-admission.html"},
+{n:"링컨 커뮤니티 스쿨 (Lincoln Community School)",r:"가나 아크라",c:"미국식·AP",g:"journal-lincoln-accra-admission.html"},
+{n:"니도 데 아길라스 (The International School Nido de Aguilas)",r:"칠레 산티아고",c:"미국식·IB",g:"journal-nido-santiago-admission.html"},
 {n:"세인트크리스토퍼 스쿨 (St Christopher's School Bahrain)",r:"바레인",c:"영국계·IB·A-Level",g:"journal-stchris-bahrain-admission.html"},
 {n:"JKS 제다 (Jeddah Knowledge International School)",r:"사우디 제다",c:"미국식·AP",g:"journal-jks-jeddah-admission.html"},
 {n:"AISJ 제다 (American International School of Jeddah)",r:"사우디 제다",c:"미국식·AP",g:"journal-aisj-jeddah-admission.html"},
@@ -385,7 +395,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우|튀르키예|이스탄불|아제르바이잔|바쿠|방글라데시|다카|몽골|울란바토르|케냐|나이로비|우간다|캄팔라|탄자니아|다르에스살람|나이지리아|라고스|가나|아크라|칠레|산티아고/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
