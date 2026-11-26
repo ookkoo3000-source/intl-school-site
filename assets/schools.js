@@ -270,6 +270,16 @@ var INTL_SCHOOLS=[
 {n:"라이포드케이 국제학교 (Lyford Cay International School, LCIS)",r:"바하마 나소",c:"IB",g:"journal-lcis-nassau-admission.html"},
 {n:"포트오브스페인 국제학교 (International School of Port of Spain, ISPS)",r:"트리니다드토바고 포트오브스페인",c:"IB",g:"journal-isps-trinidad-admission.html"},
 {n:"코드링턴 스쿨 (The Codrington School)",r:"바베이도스",c:"IB",g:"journal-codrington-barbados-admission.html"},
+{n:"야운데 아메리칸 국제학교 (AISOY)",r:"카메룬 야운데",c:"미국식",g:"journal-aisoy-yaounde-admission.html"},
+{n:"미국-니카라과 학교 (American Nicaraguan School, ANS)",r:"니카라과 마나과",c:"미국식",g:"journal-ans-managua-admission.html"},
+{n:"과테말라 아메리칸 스쿨 (CAG)",r:"과테말라 과테말라시티",c:"미국식",g:"journal-cag-guatemala-admission.html"},
+{n:"캄포알레그레 학교 (Escuela Campo Alegre, ECA)",r:"베네수엘라 카라카스",c:"미국식·IB",g:"journal-eca-caracas-admission.html"},
+{n:"컨트리데이스쿨 (Country Day School, CDS)",r:"코스타리카 알라후엘라",c:"영국식·IB",g:"journal-cds-costarica-admission.html"},
+{n:"코토팍시 아메리칸 국제학교 (Academia Cotopaxi)",r:"에콰도르 키토",c:"미국식",g:"journal-cotopaxi-quito-admission.html"},
+{n:"산토도밍고 아메리칸 스쿨 (ASD)",r:"도미니카공화국 산토도밍고",c:"미국식",g:"journal-asd-santodomingo-admission.html"},
+{n:"파나마국제학교 (International School of Panama, ISP)",r:"파나마 파나마시티",c:"미국식",g:"journal-isp-panama-admission.html"},
+{n:"아메리칸브리티시아카데미 (ABA)",r:"오만 무스카트",c:"IB",g:"journal-aba-muscat-admission.html"},
+{n:"QSI 트빌리시 (QSI International School of Tbilisi)",r:"조지아 트빌리시",c:"미국식·QSI",g:"journal-qsi-tbilisi-admission.html"},
 {n:"세인트크리스토퍼 스쿨 (St Christopher's School Bahrain)",r:"바레인",c:"영국계·IB·A-Level",g:"journal-stchris-bahrain-admission.html"},
 {n:"JKS 제다 (Jeddah Knowledge International School)",r:"사우디 제다",c:"미국식·AP",g:"journal-jks-jeddah-admission.html"},
 {n:"AISJ 제다 (American International School of Jeddah)",r:"사우디 제다",c:"미국식·AP",g:"journal-aisj-jeddah-admission.html"},
@@ -435,7 +445,7 @@ var TABS = { kr: KR_SCHOOLS, intl: INTL_SCHOOLS };
 INTL_SCHOOLS.forEach(function (s) {
   var r = s.r;
   if (/보딩/.test(r)) { s.j = ''; return; }
-  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우|튀르키예|이스탄불|아제르바이잔|바쿠|방글라데시|다카|몽골|울란바토르|케냐|나이로비|우간다|캄팔라|탄자니아|다르에스살람|나이지리아|라고스|가나|아크라|칠레|산티아고|카자흐스탄|아스타나|키르기스스탄|비슈케크|우즈베키스탄|타슈켄트|알바니아|티라나|북마케도니아|스코페|슬로바키아|브라티슬라바|아르메니아|예레반|베트남|하이퐁|동티모르|딜리|나미비아|빈트후크|몰타|모스타|보스니아|사라예보|몬테네그로|포드고리차|알마티|태국|푸켓|헝가리|파파|몰도바|키시나우|코소보|프리스티나|아티라우|타지키스탄|두샨베|지부티|짐바브웨|하라레|잠비아|루사카|벨리즈|투르크메니스탄|아시가바트|코트디부아르|아비장|세네갈|다카르|벨라루스|민스크|수리남|파라마리보|마다가스카르|안타나나리보|부르키나파소|와가두구|감비아|볼리비아|라파즈|우루과이|몬테비데오|파라과이|아순시온|바하마|나소|트리니다드|포트오브스페인|바베이도스/.test(r))
+  if (/싱가포르|홍콩|중국|베이징|상하이|선전|광저우|일본|도쿄|요코하마|나고야|오사카|고베|베트남|호치민|하노이|다낭|태국|방콕|치앙마이|푸켓|말레이시아|쿠알라룸푸르|조호|푸트라자야|인도네시아|자카르타|발리|필리핀|마닐라|세부|수빅|대만|타이베이|두바이|UAE|아부다비|도하|리야드|카이로|이집트|제다|암만|요르단|양곤|미얀마|비엔티안|라오스|쿠웨이트|프놈펜|캄보디아|바레인|인도|뭄바이|푸네|타이중|선전|첸나이|난징|쑤저우|광저우|튀르키예|이스탄불|아제르바이잔|바쿠|방글라데시|다카|몽골|울란바토르|케냐|나이로비|우간다|캄팔라|탄자니아|다르에스살람|나이지리아|라고스|가나|아크라|칠레|산티아고|카자흐스탄|아스타나|키르기스스탄|비슈케크|우즈베키스탄|타슈켄트|알바니아|티라나|북마케도니아|스코페|슬로바키아|브라티슬라바|아르메니아|예레반|베트남|하이퐁|동티모르|딜리|나미비아|빈트후크|몰타|모스타|보스니아|사라예보|몬테네그로|포드고리차|알마티|태국|푸켓|헝가리|파파|몰도바|키시나우|코소보|프리스티나|아티라우|타지키스탄|두샨베|지부티|짐바브웨|하라레|잠비아|루사카|벨리즈|투르크메니스탄|아시가바트|코트디부아르|아비장|세네갈|다카르|벨라루스|민스크|수리남|파라마리보|마다가스카르|안타나나리보|부르키나파소|와가두구|감비아|볼리비아|라파즈|우루과이|몬테비데오|파라과이|아순시온|바하마|나소|트리니다드|포트오브스페인|바베이도스|카메룬|야운데|니카라과|마나과|과테말라|베네수엘라|카라카스|코스타리카|알라후엘라|에콰도르|키토|도미니카공화국|산토도밍고|파나마|오만|무스카트|조지아|트빌리시/.test(r))
     s.j = '주재원 자녀가 특히 많이 다니는 학교';
   else if (/뉴저지|캘리포니아|산호세|쿠퍼티노|프리몬트|어바인|워싱턴|시애틀|벨뷰|레드먼드|텍사스|플레이노|프리스코|오스틴|휴스턴|버지니아|샌디에이고|샌프란시스코|팔로알토|세리토스|풀러턴/.test(r))
     s.j = '한국 대기업 주재원·기러기 가정이 많은 지역';
